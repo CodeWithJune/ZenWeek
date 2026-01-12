@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZenWeek — Focus on 3</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>ZenWeek</h1>
+    <p class="tagline">Focus on only 3 important tasks per day</p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="week-label">Week of <span id="week-range"></span></div>
+      <div class="progress">
+        <div class="progress-label">Weekly progress</div>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill" style="width:0%"></div>
+        </div>
+        <div id="progress-percent" class="progress-percent">0%</div>
+      </div>
+    </section>
+
+    <section id="week-grid" class="week-grid" aria-label="7 day week">
+      <!-- 7 day columns will be injected here -->
+    </section>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+  </main>
+
+  <footer class="app-footer">
+    <small>Built for calm focus • Local-only data (saved in your browser)</small>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
